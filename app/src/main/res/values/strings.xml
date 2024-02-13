@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Compass</string>
+    <string name="compass">compass</string>
+    <string name="rotation_degree">Rotation Degree</string>
+</resources>
