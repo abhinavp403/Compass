@@ -40,7 +40,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -49,7 +48,6 @@ import com.google.android.gms.location.LocationCallback
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
-import dev.abhinav.compass.ui.theme.CompassTheme
 import java.io.IOException
 import java.util.Locale
 import java.util.concurrent.TimeUnit
@@ -226,12 +224,4 @@ fun getReadableLocation(latitude: Double, longitude: Double, context: Context): 
         Log.d("geolocation", e.message.toString())
     }
     return addressText
-}
-
-@Preview
-@Composable
-fun CompassPreview() {
-    CompassTheme {
-        CompassScreen()
-    }
 }
